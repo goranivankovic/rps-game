@@ -66,7 +66,7 @@ export default class ContainerWith3Picture extends Component {
                 <Container>
                     <Row>
                         <Col xs={4}>
-                            <Button className="changeBtn b" onClick={()=>{
+                            <Button className="changeBtn b btn-md" onClick={()=>{
                             
                                 this.setState({
                                     pic1:this.state.allImges[Math.floor(Math.random()*3)]
@@ -83,7 +83,7 @@ export default class ContainerWith3Picture extends Component {
                         
                         </Col>
                         <Col xs={4}>
-                        <Button className="playBtn b"onClick={()=>{
+                        <Button className="playBtn b btn-md"onClick={()=>{
                                 document.querySelector('.playBtn').style.display='none'
                               const izbrisi =setInterval(()=>{
                                 this.setState({
