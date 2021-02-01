@@ -83,7 +83,7 @@ export default class ContainerWith3Picture extends Component {
                         
                         </Col>
                         <Col xs={4}>
-                        <Button className="playBtn btn-md"onClick={()=>{
+                        <Button className="playBtn float-right  btn-md"onClick={()=>{
                                 document.querySelector('.playBtn').style.display='none'
                               const izbrisi =setInterval(()=>{
                                 this.setState({
