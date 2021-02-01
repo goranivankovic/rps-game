@@ -16,6 +16,7 @@ export default class ContainerWith3Picture extends Component {
           scoreUser:0,
           scoreComp:0,
           textic:'',
+          slikaDaIdeRedom:0
         
       }
     }
@@ -67,10 +68,27 @@ export default class ContainerWith3Picture extends Component {
                     <Row>
                         <Col xs={4}>
                             <Button className="changeBtn btn-md" onClick={()=>{
+                                
+
+                                   this.setState({
                             
-                                this.setState({
-                                    pic1:this.state.allImges[Math.floor(Math.random()*3)]
+                                    slikaDaIdeRedom:this.state.slikaDaIdeRedom+1,
+                                    pic1:this.state.allImges[this.state.slikaDaIdeRedom]
                                 })
+
+                                if(this.state.slikaDaIdeRedom>=2){
+                                 
+                                    
+
+                                    this.setState({
+                                        slikaDaIdeRedom:0
+                                    })
+                                }
+                             
+
+                            
+                            
+                             
                               
                             }}>change</Button>
                         
