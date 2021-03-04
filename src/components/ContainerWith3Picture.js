@@ -12,7 +12,7 @@ export default class ContainerWith3Picture extends Component {
           allImges:[game0,game1,game2],
           pic1:allPic,
           pic2:allPic,
-          num5:5,
+          num5:7,
           scoreUser:0,
           scoreComp:0,
           textic:'',
@@ -121,7 +121,7 @@ export default class ContainerWith3Picture extends Component {
                                 } else if(this.state.num5 == 0){
                                     this.setState({
                                        
-                                        num5:5
+                                        num5:7
                                         
                                     })
                                    
